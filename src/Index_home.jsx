@@ -1,4 +1,4 @@
-/* import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
   BsCircleFill,
@@ -9,10 +9,8 @@ import TodoTask from "./TodoTask";
 import config from "./config.json";
 
 // axios.defaults.baseURL = process.env.REACT_APP_URL;
-// const apiEndpoint = "/";
-// eslint-disable-next-line no-restricted-globals
 
-function App() {
+function Index_home() {
   const [todos, setTodos] = useState([]);
   useEffect(() => {
     axios
@@ -61,7 +59,7 @@ function App() {
         </div>
       ) : (
         todos.map((todo) => (
-          <div className="index_task">
+          <div className="index_task" key={todo._id}>
             <div
               className="finished_check"
               onClick={() => {
@@ -92,5 +90,4 @@ function App() {
   );
 }
 
-export default App;
- */
+export default Index_home;

@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+}
+.todo_form {
+  width: 96%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo_form input {
+  width: 50%;
+  padding: 15px;
+  margin-right: 10px;
+  border-bottom: 2px solid;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.todo_form button {
+  width: fit-content;
+  padding: 15px;
+  background-color: #471207;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.index_task {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  justify-content: space-between;
+  background-color: #471207;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.finished_check {
+  display: flex;
+  align-items: center;
+}
+
+.finished_check .completed_icon {
+  margin: 10px 10px 20px 10px;
+  align-items: center;
+}
+
+.index_task div .delete_icon {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.finished {
+  text-decoration: line-through;
+  color: red;
 }
