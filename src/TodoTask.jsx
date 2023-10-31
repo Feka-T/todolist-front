@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import config from "./config.json";
 
-// axios.defaults.baseURL = process.env.REACT_APP_URL;
-
 function TodoTask() {
   const [todo_task, setTask] = useState();
 

@@ -8,8 +8,6 @@ import {
 import TodoTask from "./TodoTask";
 import config from "./config.json";
 
-// axios.defaults.baseURL = process.env.REACT_APP_URL;
-
 function Index_home() {
   const [todos, setTodos] = useState([]);
   useEffect(() => {
@@ -51,7 +49,7 @@ function Index_home() {
 
   return (
     <div className="index">
-      <h1>Welcome to Fekadu Tadesse Todo List</h1>
+      <h1>Welcome to Fekadu's Todo List</h1>
       <TodoTask />
       {todos.length === 0 ? (
         <div>

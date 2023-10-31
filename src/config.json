@@ -1,3 +1,7 @@
 {
-  "apiEndpoint": ""
+  "_for_localhost": "for localhost frontend connection",
+  "apiEndpoint_local": "http://localhost:8080/",
+
+  "_cloud": "for localhost frontend connection",
+  "apiEndpoint": "https://todolist-backend-rudo.onrender.com/"
 }
